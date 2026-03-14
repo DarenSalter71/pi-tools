@@ -15,5 +15,5 @@ TEMP_INT=${TEMP%.*}
 #Run Comparison
 
 if [ "$TEMP_INT" -ge "$THRESHOLD" ]; then
-   echo "WARNING WILL ROBINSON: Pi CPU Temperature is ${TEMP}(c)"
+   echo "$(date) WARNING WILL ROBINSON: Pi CPU Temperature is ${TEMP}(c)"
 fi
