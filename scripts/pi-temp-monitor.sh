@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOGFILE="/home/darensalteruk/scripts/pi-temp.log"
+LOGFILE="/home/darensalteruk/scripts/logs/pi-temp-$(date +%Y-%m).log"
 THRESHOLD=60
 
 # Get Temperature

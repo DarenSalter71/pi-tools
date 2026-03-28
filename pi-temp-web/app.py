@@ -12,9 +12,9 @@ def index():
 
 	try:
 		with open(LOGFILE) as f:
-			lines = f.readlines()[-100:]
+			lines = f.readlines()[-200:]
 
-			for line in lines:	#Last 100 readings
+			for line in lines:	#Last 200 readings
 				line = line.strip()
 				
 				timestamp, temp = line.split(",")
@@ -22,7 +22,7 @@ def index():
 				dt = datetime.strptime(timestamp,"%Y-%m-%d %H:%M:%S")
 				labels.append(dt.strftime("%H:%M"))
 				temps.append(float(temp))
-				print(labels, temps)
+				# print(labels, temps)
 	except FileNotFoundError:
 		pass
 
